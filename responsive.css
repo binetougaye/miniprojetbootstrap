@@ -1,0 +1,8 @@
+@media screen and (max-width:1213px){
+   .part-end{
+    display: none;
+   }
+   .form-control{
+    width: 300px;
+   }
+}
