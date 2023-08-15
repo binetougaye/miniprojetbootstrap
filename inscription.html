@@ -6,12 +6,52 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Page d'inscription</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg position fixed-top w-100 ">
+        <div class="container-fluid ">
+        <a class="navbar-brand" href="#">La Bouquinerie
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
+            <ul class="navbar-nav text-uppercase">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: #7d281e;">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="produit.html">Produits</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="connexion.html">Connexion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inscription.html">S'inscrire</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>
+        </div>
+        <div class="part-end">
+            <form class="search" role="search">
+                <input class="form-control me-2 border border-white bg-transparent" type="search" placeholder="Quel livre cherchez-vous?" aria-label="Search">
+            </form>
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <div>
+                <img src="images/vector-panier.png" alt="">
+            </div>
+        </div>
+       
+        </div>
+    </nav>
     <div class="container connexion inscription d-flex justify-content-center align-items-center flex-column">
         <div class="row justify-content-center">
             <div class="col text-center">
@@ -20,17 +60,17 @@
             </div>
         </div>
             <div class="row justify-content-center align-items-center inscription">
-                <div class="col p-2">
+                <div class="col p-1">
                     <div class="col google-input">
-                        <input type="submit" class="form-control form" value="Connectez-vous avec Google">
+                        <input type="submit" class="form-control form border-secondary" value="Connectez-vous avec Google">
                         <i class="fa fa-google" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
             <div class="row inscription">
-                <div class="col p-2 ">
+                <div class="col p-1 ">
                     <div class="col facebook-input">
-                        <input type="submit"  class="form-control form" value="Connectez-vous avec Facebook">
+                        <input type="submit"  class="form-control form border-secondary" value="Connectez-vous avec Facebook">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -38,17 +78,17 @@
            
 
             <div class="row justify-content-center align-items-center inscription">
-                <div class="col p-2">
+                <div class="col p-1">
                     <div class="col apple-input">
-                        <input type="submit"  class="form-control form" value="Connectez-vous avec Apple">
+                        <input type="submit"  class="form-control form border-secondary" value="Connectez-vous avec Apple">
                         <i class="fa fa-apple" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
             <div class="row inscription">
-                <div class="col p-2">
+                <div class="col p-1">
                     <div class="col insta-input">
-                        <input type="submit"  class="form-control form" value="Connectez-vous avec Instagram">
+                        <input type="submit"  class="form-control form border-secondary" value="Connectez-vous avec Instagram">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -57,42 +97,42 @@
                 <div class="row mt-5">
                     <div class="col user">
                         <h4>NOM COMPLET</h4>
-                        <input type="text" class="form-control form" placeholder="Prenom/Nom">
+                        <input type="text" class="form-control form border-dark" placeholder="Prenom/Nom">
                         <i class="fa fa-user" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col mail p-3">
                         <h4>EMAIL</h4>
-                        <input type="text" class="form-control form" placeholder="Adresse électronique">
+                        <input type="text" class="form-control form border-dark" placeholder="Adresse électronique">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col user-circle p-3">
                         <h4>NOM D'UTILISATEUR</h4>
-                        <input type="text" class="form-control form" placeholder="Nom d'utilisateur">
+                        <input type="text" class="form-control form border-dark" placeholder="Nom d'utilisateur">
                         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col mdp p-3">
                         <h4>MOT DE PASSE</h4>
-                        <input type="text" class="form-control form" placeholder="Votre mot de passe">
+                        <input type="text" class="form-control form border-dark" placeholder="Votre mot de passe">
                         <i class="fa fa-key" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col mdp2 p-3">
                         <h4>CONFIRMEZ LE MOT DE PASSE</h4>
-                        <input type="text" class="form-control form" placeholder="Entrez à nouveau le mot de passe">
+                        <input type="text" class="form-control form border-dark" placeholder="Entrez à nouveau le mot de passe">
                         <i class="fa fa-key" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col p-2 text-center">
                         <div class="col">
-                            <input type="submit" value="S'INSCRIRE" id="submit2">
+                            <input type="submit" value="S'INSCRIRE" class="border-0 text-white" id="submit2">
                         </div>
                     </div>
                 </div>
@@ -103,4 +143,5 @@
            
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>

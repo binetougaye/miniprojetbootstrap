@@ -21,10 +21,6 @@ body{
     background-attachment: fixed;
    
 }
-.navbar{
-    background-color: rgba(255, 255, 255, 0.8);
-   
-}
 .nav-item .nav-link,.navbar-brand{
     color: #fff;
 }
@@ -42,10 +38,7 @@ body{
     color: #7d281e;
 }
 .form-control{
-    width: 400px;
-    background-color: transparent;
-    border: 1px solid #fff;
-   
+    width: 300px;
 }
 .search{
     position: relative;
@@ -55,6 +48,10 @@ body{
     top: 30px;
     right: 50px;
     color: #7d281e;
+    font-size: 50px;
+}
+.fa-search::before{
+    font-size: 20px;
 }
 .form-control::placeholder{
     color: #7d281e;
@@ -86,20 +83,15 @@ body{
 }
 .buttons .btn1{
     background-color: #7d281e;
-    color: #fff;
     border: 1px solid #7d281e;
     width: 150px;
     padding: 10px;
     margin: 20px;
-    border-radius: 50px;
 }
 .buttons .btn2{
-    background-color: transparent;
-    color: #fff;
     border: 1px solid #7d281e;
     width: 150px;
     padding: 10px;
-    border-radius: 50px;
 }
 .buttons .btn1:hover{
     background-color: transparent;
@@ -109,29 +101,22 @@ body{
     background-color: #7d281e;
     color: #fff;
 }
-/* premiére section */
-.one h1{
-    color: #fab1a0;
-    margin-top: 20px;
-    margin-bottom:20px ;
-}
-.card-body h1{
-    font-size: 24px;
-}
-.btn-card{
-    background-color: #fab1a0;
-    color: #fff;
-    width: 100%;
-}
-/* CATEGORIES */
-.categories img{
+                                    /* CATEGORIES */
+.principale img{
     width: 400px;
     height: 581px;
     object-fit: cover;
 }
-.categories h1{
+.principale h1{
     color: #7d281e;
-    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.principale{
+    margin-top: 100px;
+    padding: 40px;
+}
+.principale .card2{
+    margin: 10px;
 }
 .test img{
     padding: 15px;
@@ -141,7 +126,6 @@ body{
 }
 .roman h1{
     position: absolute;
-    color: #fff;
     bottom: 80px;
     left: 50px;
 }
@@ -154,96 +138,50 @@ body{
 .roman h1{
     font-size: 24px;
     font-family: 'Dancing Script', cursive;
-
 }
-/* ACHATS */
+                                    /* ACHATS */
 .achats h1{
     color: #7d281e;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .card1 img{
     width: 364px;
     height: 366.61px;
     object-fit: cover;
-   
 }
 .card1{
     margin: 20px;
-    box-shadow:5px 5px 3px gray ;
     position: relative;
 }
 .fa-heart-o{
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: 15px;
+    right: 15px;
     padding: 5px;
-    background-color: #fff;
 }
-
-
 .btn-achat{
    background-color: #7d281e;
-   color: #fff;
    margin-top: 10px;
    width: 150px;
-   box-shadow: 5px 5px 3px gray;
-}
-.contemplations{}
-/* PRODUITS */
-.produit{
-    margin-top: 100px;
-    padding: 40px;
-}
-.produit h1{
-    color: #7d281e;
-}
-.produit img{
-    width: 400px;
-    height: 581px;
-    object-fit: cover;
-    box-shadow: 5px 5px 5px gray;
-}
-.produit .card2{
-    margin: 10px;
-}
-.price p{
-    font-size: 14px;
-}
-.progress-bar{
-    background-color: navy;
-}
-.price span{
-    color: red;
-}
-.price .span {
-    color:gray;
-}
-/* CONNEXION */
-.connexion{
-    /* background-color: #fab1a0; */
+} 
+                                        /* CONNEXION */
+.connexion{ 
     background-image: url('images/bg.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #7d281e;
-    width: 500px;
-    margin-top: 50px;
+    max-width: 500px;
+    margin-top: 150px;
     padding: 50px;
-    /* background-color: #f8f9fa; */
-}
-.connection{
-    /* background-color: #f8f9fa; */
 }
 .connexion h1{
-    color: #fff;
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
 }
 input{
-    width: 400px;
-    border: none;
-    border-bottom: 1px solid #fff ;
-    background-color: transparent;
+    width: 100%;
     outline: none;
     padding: 10px;
 }
@@ -251,17 +189,12 @@ input::placeholder{
     color: #fff;
 }
 #submit{
-    border: none;
     background: linear-gradient(to right, #7d281e,white);
-    color: #fff;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px gray ;
     margin-top: 20px;
 }
 #create{
     border: 1px solid #7d281e;
-    color: #fff;
     width: 200px;
     padding: 10px;
 }
@@ -281,15 +214,9 @@ input::placeholder{
     top: 15px;
     right: 10px;
 }
-/* INSCRIPTION */
-.inscription input{
-    border: 1px solid;
-}
+                                        /* INSCRIPTION */
 .google-input{
     position: relative;
-}
-.google-input input{
-    border: 1px solid gray;
 }
 .fa-google{
     position: absolute;
@@ -302,9 +229,6 @@ input::placeholder{
 .facebook-input{
     position: relative;
 }
-.facebook-input input{
-    border: 1px solid gray;
-}
 .fa-facebook{
     position: absolute;
     left: 10px;
@@ -312,9 +236,6 @@ input::placeholder{
 }
 .apple-input{
     position: relative;
-}
-.apple-input input{
-    border: 1px solid gray;
 }
 .fa-apple{
     position: absolute;
@@ -324,44 +245,27 @@ input::placeholder{
 .insta-input{
     position: relative;
 }
-.insta-input input{
-    border: 1px solid gray;
-}
+
 .fa-instagram{
     position: absolute;
     left: 10px;
     top: 8px;
-
-}
-.trait1,.trait2{
-    background-color: #fab1a0;
-    height: 3px;
-    margin: 10px;
-    width: 190px;
 }
 form h4{
     font-size: 16px;
 }
-form .form-control{
-    border: 1px solid gray;
-}
 .inscription{
     color: #7d281e;
+    max-width: 500px;
 }
 .inscription h1{
     color: #7d281e;
-}
-.inscription h2{
-    color: #000;
-    font-size: 18px;
 }
 .form::placeholder{
     color:#000;
 }
 #submit2{
     background-color: #7d281e;
-    color: #fff;
-    border: none;
     width: 150px;
     margin-top: 50px;
 }
@@ -388,7 +292,6 @@ form .form-control{
     position: absolute;
     top: 50px;
     right: 30px;
-   
 }
 .mdp, .mdp2{
     position: relative;
@@ -401,51 +304,36 @@ form .form-control{
 /* TESTIMONY */
 .testimony{
     background-color: #f8f9fa;
-}
-.card{
-    background-color: #fff;
-    margin: 25px;
-    position: relative;
-    /* padding: 30px; */
-    box-shadow: 5px 5px 5px gray;
-    border-bottom: 3px solid #7d281e;
-    transition: 0.65s;
-    
-}
-.card1:hover{
-    transform: translateY(-10px);
+    padding: 50px;
 }
 .testimony h1{
     color: #7d281e;
-    margin-top: 20px;
+    margin-bottom: 25px;
 }
-.testimony h5{
-    color: #7d281e;
-}
-.img{
-    position: absolute;
-    top: 50px;
-    left: -50px;
+.carte{
+    position: relative;
+    
 }
 .img img{
-    width: 80px;
+    position: absolute;
+    top: 30px;
+    left: -70px;
+    width: 100px;
 }
-.media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+
+.pic img{
+    position: relative;
+    height: 900px;
+    object-fit: cover;
 }
-.instagram, .facebook, .twitter{
-    position: static;
-    color: #7d281e;
-}
-/* SOCIAL */
+                                    /* SOCIAL */
 .social{
     background-color: #f8f9fa;
+    padding: 50px;
 }
 .social h1{
     color: #7d281e;
+    margin-bottom: 30px;
 }
 .social img{
     width: 80px;
@@ -454,60 +342,53 @@ form .form-control{
 .social img:hover{
     transform: translateY(-10px);
 }
-/* contact */
+                                        /* contact */
 .contact{
     margin-top: 100px;
+}
+.contact1{
     background-color: #fff;
-    /* width: 1000px; */
-    /* border: 1px solid #fff; */
 }
 .contact h1{
     color: #7d281e;
     font-size: 22px;
     margin-top: 15px;
 }
-.contact input{
-    border: none;
-    border-bottom: 1px solid;
-    padding: 30px;
-    width: 100%;
+.form input{
+    padding: 10px;
+    margin: 15px;
+    outline: none;
 }
-.contact input::placeholder{
+.form input::placeholder{
     color: #7d281e;
 }
-.map img{
-    width: 100%;
-    height: 100%;
+.picture img{
     object-fit: cover;
+    height: 100%;
 }
-.map{
+.picture{
     position: relative;
 }
-.map p{
+.picture p{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: #fff;
     font-size: 20px;
 }
-
 #message{
-    border: none;
-    border-bottom: 1px solid ;
-    width: 100%;
-    padding: 30px;
-   
+    padding: 20px;
+}
+#message::placeholder{
+    color: #7d281e;
 }
 #submit3{
     background-color: #7d281e;
-    color: #fff;
     width: 150px;
     border: 1px solid #7d281e;
     padding: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    
 }
 .text-area textarea::placeholder{
     color: #7d281e;
@@ -528,24 +409,20 @@ form .form-control{
 .icon .fa{
     color: #fff;
 }
-/* FOOTER */
+                                                /* FOOTER */
 #footer{
     background-color: #7d281e;
-    color: #fff;
+    
 }
 #footer h1{
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
     margin-bottom: 30px;
 }
-.footer-img{
-    width: 100%;
-}
 .footer-box .form-control::placeholder{
     color: #fff;
 }
 .btn-subscribe{
-    background-color: #fff ;
     color: #7d281e;
     margin-top: 30px;
 }

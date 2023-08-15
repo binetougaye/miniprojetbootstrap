@@ -6,59 +6,78 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
-    <section class="infos">
-        <div class="container contact d-flex justify-content-center flex-row">
+    <nav class="navbar navbar-expand-lg position fixed-top w-100 ">
+        <div class="container-fluid ">
+        <a class="navbar-brand" href="#">La Bouquinerie
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
+            <ul class="navbar-nav text-uppercase">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: #7d281e;">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="produit.html">Produits</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="connexion.html">Connexion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inscription.html">S'inscrire</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>
+        </div>
+        <div class="part-end">
+            <form class="search" role="search">
+                <input class="form-control me-2 border border-white bg-transparent" type="search" placeholder="Quel livre cherchez-vous?" aria-label="Search">
+            </form>
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <div>
+                <img src="images/vector-panier.png" alt="">
+            </div>
+        </div>
+       
+        </div>
+    </nav>
+    <section class="contact">
+        <div class="container contact1">
             <div class="row">
-                <h1 class="text-center">Send us a message</h1>
-                <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form">
+                    <h1 class="text-center">Send us a message</h1>
                     <form action="get">
-                       
-                            <div>
-                                <input type="text" id="name" placeholder="Name">
-                            </div>
-                            <div>
-                                <input type="text" id="mail" placeholder="Your Email">
-                            </div>
-                       
-                            <div>
-                                <input type="text" id="phone" placeholder="Phone">
-                            </div>
+                        <div class="form">
+                            <input type="text" class="form-control border-0 border-bottom border-dark" placeholder="Name">
+                            <input type="text" class="form-control border-0 border-bottom border-dark" placeholder="Your Mail">
+                            <input type="text" class="form-control border-0 border-bottom border-dark" placeholder="Phone">
+                            <!-- <input type="text" class="form-control border-0 border-bottom border-dark" placeholder="Message"> -->
+                            <textarea  class="form-control border-0 border-bottom border-dark"  name="message" id="message" cols="30" rows="5" placeholder="Your message"   ></textarea>
                         </div>
-                       <div class="text-area">
-                            <textarea name="" id="message" cols="35" rows="5"  placeholder="Write your message"></textarea>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div>
-                                    <input type="submit" id="submit3" value="SEND MESSAGE">
-                                </div>
-                            </div>
-                        </div>
-                       
                     </form>
                 </div>
-            
-            <div class="row">
-                <div class="col p-0 map">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0 picture">
                     <img src="images/photo-1619468129361-605ebea04b44.avif" alt="" class="w-100">
-                    <p>La Bouquinerie
-                    </p>
+                    <p class="text-white">La Bouquinerie</p>
                 </div>
             </div>
-            
         </div>
-        
     </section>
     <footer>
         <div class="container  infos-contact">
             <div class="row">
-                <div class="col d-flex flex-column justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex flex-column justify-content-center align-items-center">
                     <div class="icon">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
@@ -66,26 +85,31 @@
                         Address: Sicap Baobabs Z11
                     </p>
                 </div>
-                <div class="col d-flex flex-column justify-content-center align-items-center">
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex flex-column justify-content-center align-items-center">
                     <div class="icon">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <p>Phone: 77-219-02-86</p>
                 </div>
-                <div class="col d-flex flex-column justify-content-center align-items-center">
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex flex-column justify-content-center align-items-center">
                     <div class="icon">
                         <i class="fa fa-location-arrow" aria-hidden="true"></i>
                     </div>
                     <p>Email:info@labouquinerie.com</p>
                 </div>
-                <div class="col d-flex flex-column justify-content-center align-items-center">
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex flex-column justify-content-center align-items-center">
                     <div class="icon">
                         <i class="fa fa-globe" aria-hidden="true"></i>
                     </div>
                     <p>Website labouquinerie.com</p>
                 </div>
+
             </div>
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
