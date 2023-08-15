@@ -16,15 +16,22 @@ body{
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    height: 700px;
+    height: 100vh;
     position: relative;
     background-attachment: fixed;
    
+}
+
+.navbar{
+    background-color: #7d271ec0;
 }
 .nav-item .nav-link,.navbar-brand{
     color: #fff;
 }
 .nav-item .nav-link:hover{
+    color: #fab1a0;
+}
+.nav-link .active{
     color: #fab1a0;
 }
 .part-end{
@@ -35,7 +42,7 @@ body{
 .navbar-brand{
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
-    color: #7d281e;
+    color: #fff;
 }
 .form-control{
     width: 300px;
@@ -47,14 +54,14 @@ body{
     position: absolute;
     top: 30px;
     right: 50px;
-    color: #7d281e;
+    color: #fff;
     font-size: 50px;
 }
 .fa-search::before{
     font-size: 20px;
 }
 .form-control::placeholder{
-    color: #7d281e;
+    color: #fff;
 }
 .text-middle{
     position: absolute;
@@ -113,7 +120,7 @@ body{
 }
 .principale{
     margin-top: 100px;
-    padding: 40px;
+    /* padding: 40px; */
 }
 .principale .card2{
     margin: 10px;
@@ -145,14 +152,15 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.card1 img{
-    width: 364px;
-    height: 366.61px;
+.achats img{
+    width: 400px;
+    height: 581px;
     object-fit: cover;
 }
-.card1{
-    margin: 20px;
+.card{
+   /* margin: 10px; */
     position: relative;
+    
 }
 .fa-heart-o{
     position: absolute;
@@ -345,9 +353,12 @@ form h4{
                                         /* contact */
 .contact{
     margin-top: 100px;
+   
 }
 .contact1{
     background-color: #fff;
+   
+  
 }
 .contact h1{
     color: #7d281e;
@@ -355,12 +366,19 @@ form h4{
     margin-top: 15px;
 }
 .form input{
-    padding: 10px;
-    margin: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
     outline: none;
+    width: 100%;
 }
 .form input::placeholder{
     color: #7d281e;
+}
+#contact-submit{
+    width: 150px;
+    background-color: #7d281e;
+    color: #fff;
+    border: none;
 }
 .picture img{
     object-fit: cover;
@@ -378,6 +396,8 @@ form h4{
 }
 #message{
     padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 #message::placeholder{
     color: #7d281e;

@@ -6,3 +6,17 @@
     width: 300px;
    }
 }
+@media screen and (max-width:700px){
+   .text-middle h1{
+      font-size: 20px;
+   }
+   .text-middle span{
+      display: block;
+   }
+   .text-middle h5{
+      font-size: 16px;
+   }
+   .achats{
+      padding: 15px;
+   }
+}
