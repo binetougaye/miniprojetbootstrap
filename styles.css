@@ -23,16 +23,13 @@ body{
 }
 
 .navbar{
-    background-color: #7d271ec0;
+    background-color:#7d281e;
 }
 .nav-item .nav-link,.navbar-brand{
     color: #fff;
 }
 .nav-item .nav-link:hover{
-    color: #fab1a0;
-}
-.nav-link .active{
-    color: #fab1a0;
+    color:#000;
 }
 .part-end{
     display: flex;
@@ -99,6 +96,7 @@ body{
     border: 1px solid #7d281e;
     width: 150px;
     padding: 10px;
+    background-color: transparent;
 }
 .buttons .btn1:hover{
     background-color: transparent;
@@ -111,7 +109,7 @@ body{
                                     /* CATEGORIES */
 .principale img{
     width: 400px;
-    height: 581px;
+    height: 400px;
     object-fit: cover;
 }
 .principale h1{
@@ -154,7 +152,7 @@ body{
 }
 .achats img{
     width: 400px;
-    height: 581px;
+    height: 400px;
     object-fit: cover;
 }
 .card{
@@ -173,6 +171,10 @@ body{
    margin-top: 10px;
    width: 150px;
 } 
+.btn-achat:hover{
+    background-color: #F33A6A;
+   
+ } 
                                         /* CONNEXION */
 .connexion{ 
     background-image: url('images/bg.avif');
@@ -309,7 +311,7 @@ form h4{
     top: 50px;
     right: 30px;
 }
-/* TESTIMONY */
+                                        /* TESTIMONY */
 .testimony{
     background-color: #f8f9fa;
     padding: 50px;
